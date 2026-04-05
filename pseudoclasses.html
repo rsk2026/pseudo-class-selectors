@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+  body {
+        
+        color:red ;
+  }
+  /*Sibling Selector*/
+  h1 + p{
+        text-align: center;
+  }
+  /*Attribute Selector*/
+  a {
+        text-decoration:none;
+  }
+  a:hover{
+        width:50px;
+        height:50px;
+        background-color:pink;
+  }
+  /*nth-child, pseudoclass*/
+  ul li:nth-child(3) {
+        background-color: aliceblue;
+  }
+  /* :not(selector) Pseudo-class */
+
+p:not(:first-of-type) {
+
+text-decoration: underline;
+
+}
+
+/* ::before Pseudo-element */
+
+ul li::before {
+
+content: "";
+
+}
+
+/* ::after Pseudo-element */
+
+a::after {
+
+content: "";
+
+}
+
+/* ::first-letter Pseudo-element */
+
+p::first-letter {
+
+font-size: 200%;
+
+color: #FF7B72;
+
+}
+  
+  
+</style>
+<body>
+   <h1>
+    Welcome to the space explorer's club
+   </h1>
+   <ul>
+     <li>Moon mission</li>
+     <li>Mars rovers</li>
+     <li>ISS</li>
+     <li>Telescopes and Stars</li>
+     <li>Black hole mysteries</li>
+   </ul>
+   <p>Space exploration has always captivated human imagination. It's a journey to the unknown!</p>
+   <p>From the Moon to distant galaxies, we continue to explore the vastness of space.</p>
+<a href=":https//google.com">Join our mission to explore a new galaxy!!</a>
+</body>
+</html>
